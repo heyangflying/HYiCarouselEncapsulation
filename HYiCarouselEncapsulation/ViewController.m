@@ -7,17 +7,21 @@
 //
 #import "iCarousel.h"
 #import "ViewController.h"
-
+#import "JTSlideShadowAnimation.h"
 @interface ViewController ()<iCarouselDataSource, iCarouselDelegate>
 @property (weak, nonatomic) IBOutlet iCarousel *carousel;
 @property (nonatomic, strong) NSMutableArray *items;
+@property (weak, nonatomic) IBOutlet UIButton *btn;
+@property (strong, nonatomic) JTSlideShadowAnimation *shadowAnimation;
 @end
 
 @implementation ViewController
 
 - (void)setUp
 {
+    
     self.items = [NSMutableArray array];
+    
     for (int i = 0; i < 10; i++)
     {
         
@@ -28,6 +32,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    
+   // [self.btn setTitle: @" 洋哥制造 !" forState:UIControlStateNormal];
+    
+  //  [self.btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
+    
+    self.shadowAnimation = [JTSlideShadowAnimation new];
+    
+    self.shadowAnimation.animatedView = self.btn;
+    
+    self.shadowAnimation.shadowWidth = 40.;
+    
+     [self.shadowAnimation start];
     
     /** 添加图片到数组中*/
     [self setUp];
@@ -69,6 +85,7 @@
         imageView.backgroundColor = [UIColor clearColor];
         imageView.tag = 1;
         [view addSubview:imageView];
+        
     }
     else
     {

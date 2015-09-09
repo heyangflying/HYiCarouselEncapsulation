@@ -24,11 +24,20 @@
                                     <outlet property="delegate" destination="vXZ-lx-hvc" id="GLN-oc-Fdw"/>
                                 </connections>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="b2Y-WH-E0U">
+                                <rect key="frame" x="53" y="80" width="214" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <state key="normal" title="洋哥最闪亮,3D效果展示   ">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
                         </subviews>
-                        <color key="backgroundColor" red="0.1927651235" green="0.22556356159999999" blue="0.26031332670000001" alpha="1" colorSpace="calibratedRGB"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina4"/>
                     <connections>
+                        <outlet property="btn" destination="b2Y-WH-E0U" id="dLa-3X-sBn"/>
                         <outlet property="carousel" destination="Ml3-Bb-Ff4" id="QQF-G2-aZR"/>
                     </connections>
                 </viewController>

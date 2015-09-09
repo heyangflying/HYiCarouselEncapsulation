@@ -40,6 +40,8 @@
 		18B6761D1BA003140013E3D8 /* 9.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B6760A1BA003140013E3D8 /* 9.jpg */; };
 		18B6761E1BA003140013E3D8 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B6760B1BA003140013E3D8 /* 0.jpg */; };
 		18B6761F1BA003140013E3D8 /* 0.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 18B6760B1BA003140013E3D8 /* 0.jpg */; };
+		18B676251BA0114E0013E3D8 /* JTSlideShadowAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B676241BA0114E0013E3D8 /* JTSlideShadowAnimation.m */; };
+		18B676261BA0114E0013E3D8 /* JTSlideShadowAnimation.m in Sources */ = {isa = PBXBuildFile; fileRef = 18B676241BA0114E0013E3D8 /* JTSlideShadowAnimation.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -80,6 +82,8 @@
 		18B676091BA003140013E3D8 /* 8.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 8.jpg; sourceTree = "<group>"; };
 		18B6760A1BA003140013E3D8 /* 9.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 9.jpg; sourceTree = "<group>"; };
 		18B6760B1BA003140013E3D8 /* 0.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = 0.jpg; sourceTree = "<group>"; };
+		18B676231BA0114E0013E3D8 /* JTSlideShadowAnimation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JTSlideShadowAnimation.h; sourceTree = "<group>"; };
+		18B676241BA0114E0013E3D8 /* JTSlideShadowAnimation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = JTSlideShadowAnimation.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +125,7 @@
 		18B675D01B9FFD620013E3D8 /* HYiCarouselEncapsulation */ = {
 			isa = PBXGroup;
 			children = (
+				18B676221BA0114E0013E3D8 /* JTSlideShadowAnimation */,
 				18B676211BA008D40013E3D8 /* controller */,
 				18B676201BA006DC0013E3D8 /* resource */,
 				18B675F71B9FFD7B0013E3D8 /* iCarousel */,
@@ -195,6 +200,15 @@
 				18B675D91B9FFD620013E3D8 /* ViewController.m */,
 			);
 			name = controller;
+			sourceTree = "<group>";
+		};
+		18B676221BA0114E0013E3D8 /* JTSlideShadowAnimation */ = {
+			isa = PBXGroup;
+			children = (
+				18B676231BA0114E0013E3D8 /* JTSlideShadowAnimation.h */,
+				18B676241BA0114E0013E3D8 /* JTSlideShadowAnimation.m */,
+			);
+			path = JTSlideShadowAnimation;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -325,6 +339,7 @@
 				18B675FA1B9FFD7B0013E3D8 /* iCarousel.m in Sources */,
 				18B675D71B9FFD620013E3D8 /* AppDelegate.m in Sources */,
 				18B675D41B9FFD620013E3D8 /* main.m in Sources */,
+				18B676251BA0114E0013E3D8 /* JTSlideShadowAnimation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -333,6 +348,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B675EE1B9FFD630013E3D8 /* HYiCarouselEncapsulationTests.m in Sources */,
+				18B676261BA0114E0013E3D8 /* JTSlideShadowAnimation.m in Sources */,
 				18B675FB1B9FFD7B0013E3D8 /* iCarousel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -520,6 +536,7 @@
 				18B675F31B9FFD630013E3D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		18B675F41B9FFD630013E3D8 /* Build configuration list for PBXNativeTarget "HYiCarouselEncapsulationTests" */ = {
 			isa = XCConfigurationList;
@@ -528,6 +545,7 @@
 				18B675F61B9FFD630013E3D8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
