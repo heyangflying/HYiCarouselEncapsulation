@@ -33,6 +33,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+     /*  TEST */
+    
+    
    // [self.btn setTitle: @" 洋哥制造 !" forState:UIControlStateNormal];
     
   //  [self.btn setTitleColor:[UIColor greenColor] forState:UIControlStateNormal];
